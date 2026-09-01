@@ -1,0 +1,10 @@
+print("Qual seu nome?")
+nome = str(input())
+print("Qual sua idade?")
+idade = int(input())
+print("Qual sua altura?")
+altura =float(input())
+
+print(nome, type(nome))
+print(idade, type(idade))
+print(altura, type(altura))
