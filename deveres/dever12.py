@@ -1,0 +1,5 @@
+print("Olá, tu tem que idade?")
+idade = int(input())
+print("Quanto tu pesa")
+peso = int(input())
+print("você pode doar sangue?", idade >= 17 and idade <= 68 and peso >= 49) 

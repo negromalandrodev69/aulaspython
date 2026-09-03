@@ -1,0 +1,3 @@
+1:#não funciona pela ordem de leitura ser de cima para baixo,sendo assim a variavel não existe se não for criada antes do print
+3:#pelo fato dele reconhecer o valor como um texto ao inves de valor numerico,assim os juntando de forma simples,para resolver é simplesmente colocar para virar um int ou float
+4:#resultando sera 4 e 9,pela ordem de variantes,o A virou o B antes do mesmo er seu valor anterado,logo B + A = 4 + 5 = 9
