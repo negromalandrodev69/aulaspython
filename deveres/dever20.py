@@ -9,3 +9,5 @@ match comida:
         print("Batata Frita R$ 8,00.")
     case 4:
         print("Refrigerante R$ 5,00.")
+    case _:
+        print("numero invalido")
