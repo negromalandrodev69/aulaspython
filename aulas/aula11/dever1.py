@@ -5,23 +5,28 @@
 #Você irá decidir qual funcionário será demitido ou receberá aumento pelo index do funcionário lista[]
 
 funcionarios = []
-adicionar = ""
 famuneto = []
-aumento = []
 demisao = []
-almento = ""
-demi = ""
 while True:
     adicionar = str(input("Você quer adicionar um funcionario?(S/N): "))
     if adicionar == "N":
         break
     if adicionar == "S":
-        funcionarios = str(input("Digite o nome do funcionario: "))
-        print(funcionarios)
-        aumento = str(input("você quer dar aumento a algum funionario?(S/N): "))
-        if aumento == "N":
-            break
-        if aumento == "S":
-            famuneto = str(input("Digite o nome do funcionario que recebera o aumento: "))
-            if famuneto == funcionarios[0]:
-                print("esse funcionario não existe")
+        funcionarios.append(str(input("Digite o nome do funcionario: ")))
+while True:
+    aumento = str(input("você quer dar aumento a algum funionario?(S/N): "))
+    if aumento == "N":
+        break
+    if aumento == "S":
+        famuneto.append(str(input("Digite o nome do funcionario que recebera o aumento: ")))
+while True:
+    demi = str(input("Você quer demitir algun funcionario?(S/N): "))
+    if demi == "N":
+        break
+    if demi == "S":
+        demisao.append(str(input("Digite o nome do funcionario: ")))
+
+for famuneto in famuneto:
+    print("Esses funcionarios: ", {famuneto}, ",receberão aumento")
+for demisao in demisao:
+    print("Já esses: ", {demisao}, ",receberão demisão")
