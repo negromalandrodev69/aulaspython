@@ -14,12 +14,16 @@ class Pessoa:
         self.cheiro = cheiro
         self.relacao = relacao
 
-    def mostrarCP(self):
-        print(self.cor)
-    def mostrarNRP(self):
-        print(self.nome, self.relacao,)
+    def mostrarN(self):
+        print(self.nome)
+    def mostrarI(self):
+        print(self.idade)
     def mostrarIC(self):
-        print(self.idade, self.cheiro)
+        print(self.cor)
+    def mostrarC(self):
+        print(self.cheiro)
+    def mostrarR(self):
+        print(self.relacao)
 
     def __str__(self):
          return f"Nome: {self.nome}\nIdade: {self.idade}\nCor: {self.cor}\nCheiro: {self.cheiro}\nRelação: {self.relacao}\n"
@@ -34,4 +38,16 @@ pessoa5 = Pessoa("Victor",27 , "Avermelhado", "Baunilha", "Romântica")
 TodasP = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5]
 print(TodasP)
 for Pessoa in TodasP:
-    print(TodasP)
+    print(Pessoa.nome)
+
+escolha = input("Qual dessas pessoas você quer saber as propriedades?")
+if escolha == "1":
+    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
+if escolha == "2":
+    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
+if escolha == "3":
+    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
+if escolha == "4":
+    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
+if escolha == "5":
+    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
