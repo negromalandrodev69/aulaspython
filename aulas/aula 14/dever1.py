@@ -21,10 +21,13 @@ class Pessoa:
         return f"Nome: {self.nome}\nIdade: {self.idade}\nCheiro: {self.cheiro}\nRelação: {self.relacao}\n"
 
 
-pessoa1 = P1(
-    nome="JOAO",
-    idade="22",
-    cor="PRETO",
-    cheiro="AÇO",
-    relacao="PLATONICA"
-)
+pessoa1 = Pessoa("Camila", 28, "Branca", "Amendoa", "Amizade")
+pessoa2 = Pessoa("Carlos", 34, "Preto", "Ferro", "Empresarial")
+pessoa3 = Pessoa("Elena",42,"Parda", "Vinho Tinto", "Maternal")
+pessoa4 = Pessoa("Renan", 33 , "Branco", "Academia", "Parasocial")
+pessoa5 = Pessoa("Victor",27 , "Avermelhado", "Baunilha", "Romântica")
+
+TodasP = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5]
+print(TodasP)
+for pessoa in TodasP:
+    print(pessoa)
