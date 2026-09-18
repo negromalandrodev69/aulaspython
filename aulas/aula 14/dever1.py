@@ -14,11 +14,15 @@ class Pessoa:
         self.cheiro = cheiro
         self.relacao = relacao
 
-    def MostrarAlmaP(self):
-        print(self.nome, self.idade, self.cor, self.cheiro, self.relacao)
+    def mostrarCP(self):
+        print(self.cor)
+    def mostrarNRP(self):
+        print(self.nome, self.relacao,)
+    def mostrarIC(self):
+        print(self.idade, self.cheiro)
 
     def __str__(self):
-        return f"Nome: {self.nome}\nIdade: {self.idade}\nCheiro: {self.cheiro}\nRelação: {self.relacao}\n"
+         return f"Nome: {self.nome}\nIdade: {self.idade}\nCor: {self.cor}\nCheiro: {self.cheiro}\nRelação: {self.relacao}\n"
 
 
 pessoa1 = Pessoa("Camila", 28, "Branca", "Amendoa", "Amizade")
@@ -29,5 +33,5 @@ pessoa5 = Pessoa("Victor",27 , "Avermelhado", "Baunilha", "Romântica")
 
 TodasP = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5]
 print(TodasP)
-for pessoa in TodasP:
-    print(pessoa)
+for Pessoa in TodasP:
+    print(TodasP)
