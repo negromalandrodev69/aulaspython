@@ -15,15 +15,16 @@ class Pessoa:
         self.relacao = relacao
 
     def mostrarn(self):
-        print(self.nome)
+        return self.nome
     def mostrari(self):
-        print(self.idade)
+        return self.idade
     def mostraric(self):
-        print(self.cor)
+        return self.cor
     def mostrarc(self):
-        print(self.cheiro)
+        return self.cheiro
     def mostrarr(self):
-        print(self.relacao)
+        return self.relacao
+
 
     def __str__(self):
          return f"Nome: {self.nome}\nIdade: {self.idade}\nCor: {self.cor}\nCheiro: {self.cheiro}\nRelação: {self.relacao}\n"
@@ -52,8 +53,6 @@ def mostrar():
         print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
     if escolha == "5":
         print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
-    else:
-        print("Essa pessoa não está na lista")
         return
 
 mostrar()
