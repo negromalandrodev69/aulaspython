@@ -14,15 +14,15 @@ class Pessoa:
         self.cheiro = cheiro
         self.relacao = relacao
 
-    def mostrarN(self):
+    def mostrarn(self):
         print(self.nome)
-    def mostrarI(self):
+    def mostrari(self):
         print(self.idade)
-    def mostrarIC(self):
+    def mostraric(self):
         print(self.cor)
-    def mostrarC(self):
+    def mostrarc(self):
         print(self.cheiro)
-    def mostrarR(self):
+    def mostrarr(self):
         print(self.relacao)
 
     def __str__(self):
@@ -41,13 +41,19 @@ for Pessoa in TodasP:
     print(Pessoa.nome)
 
 escolha = input("Qual dessas pessoas você quer saber as propriedades?")
-if escolha == "1":
-    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
-if escolha == "2":
-    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
-if escolha == "3":
-    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
-if escolha == "4":
-    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
-if escolha == "5":
-    print(Pessoa.mostrarN(), Pessoa.mostrarI(), Pessoa.mostrarIC(), Pessoa.mostrarC(), Pessoa.mostrarR())
+def mostrar():
+    if escolha == "1":
+        print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
+    if escolha == "2":
+        print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
+    if escolha == "3":
+        print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
+    if escolha == "4":
+        print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
+    if escolha == "5":
+        print(Pessoa.mostrarn(), Pessoa.mostrari(), Pessoa.mostraric(), Pessoa.mostrarc(), Pessoa.mostrarr())
+    else:
+        print("Essa pessoa não está na lista")
+        return
+
+mostrar()
