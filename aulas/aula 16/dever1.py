@@ -4,14 +4,23 @@ class Produto:
         self.__preco = preco
         self.__quantidade_estoque = quantidade_estoque
 
-    def Adicionar_Q(self, quantidade_estoque):
-        if self.__quantidade_estoque > 0:
-
-    def Adicionar_V(self, vendas):
-        if self.__quantidade_estoque > 0:
-
-    def Adicionar_AD(self, quantidade_estoque ):
-
+    def adicionar_q(self, adicionar_qq, quantidade_estoque):
+        if adicionar_qq <= 0:
+            print("Erro: Quantidade inválida")
+        else:
+            self.__quantidade_estoque += 1
+    def adicionar_v(self, vendas, quantidade_estoque):
+        if vendas > self.__quantidade_estoque:
+            print("Venda negada: Estoque insuficiente")
+        else:
+            self.__quantidade_estoque -= 1
+    def adicionar_ad(self,desconto, preco):
+        if desconto < 0 > 80% preco:
+            print("Erro: Desconto inválido")
+        else:
+            self.__preco - desconto
+    def resumo(self,nome,preco,quantidade_estoque):
+        print(self.__nome,self.__preco,self.__quantidade_estoque)
 
  # 1. Tente forçar a alteração direta dos atributos (O Python permite criar variável fora, mas não altera a original):
  # meu_produto.__quantidade_estoque = -50
