@@ -36,10 +36,9 @@ class Animal():
             self.__fome = porcao
 
     @property
-    def emitir_s(self, nome):
-        print({self.__nome},"faz som genérico")
+    def emitir_s(self):
+        print(f"{self.__nome}faz som genérico")
 
     @property
-    def resumo(self,nome ,idade ,fome):
-        print (f"O",{self.__nome},"tem",{self.__idade},"anos e está com ",{self.__fome},"nivel de fome")
-        return
+    def resumo(self):
+        return f"O {self.__nome} tem {self.__idade} anos e está com {self.__fome} nivel de fome"

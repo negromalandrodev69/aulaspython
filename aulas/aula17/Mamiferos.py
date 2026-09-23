@@ -2,17 +2,19 @@ from Animal import Animal
 
 class Mamifero(Animal):
 
-    def __init__(self, nome, idade, fome):
-        super().__init__(nome = "Leão", idade = 2, fome = 70, correr_kmh = 80)
+    def __init__(self):
+        super().__init__(nome = "Leão", idade = 2, fome = 70)
+        self.__correr_kmh = 80
 
-    def correr(self,fome,correr_kmh):
-        if correr_kmh > 0:
-            fome - 20
-            print(self.__nome, "correu a",{correr_kmh}, "km/h")
+    def correr(self):
+        if self.__correr_kmh > 0:
+            print(f"{self.nome} correu a {self.__correr_kmh} km/h")
             return
 
-    def emitir_r(self,nome):
-        print (self.__nome,"Ruge alto")
+    def emitir_s(self):
+        print(f"{self.nome} faz som genérico")
 
-    def resum2(self):
-        print
+obj = Mamifero()
+print(obj.resumo)
+obj.emitir_s()
+
