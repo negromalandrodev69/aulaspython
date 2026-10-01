@@ -24,25 +24,3 @@ class Email2(SistemaN):
             email = False
             print ("Numero invalido seu :", email  ,"não será enviado")
             return False
-
-def processar_lote(lista_de_objetos):
-
-# 1. Tentativa de instanciar a Classe Abstrata (DEVE GERAR ERRO)
-# Descomente a linha abaixo para testar e provar que o Python bloqueia:
-# objeto_generico = SuaClassePai()
-
-# 2. Instanciando as Classes Filhas
-#     obj1 = ClasseFilha1()
-#     obj2 = ClasseFilha2()
-
-# 3. Criando um Lote de Processamento (Lista)
-    #lote = [obj1, obj2, obj1]  # Pode repetir tipos
-
-# 4. Processando em lote (Demonstrando o Polimorfismo e a Abstração)
-#     print("\n--- INICIANDO PROCESSAMENTO EM LOTE ---")
-#     for item in lote:
-#         item.método
-#         concreto
-#         log()
-#         # Chama o método que era abstrato, mas agora está implementado
-#         item.metodo_abstrato(argumento1, argumento2)
