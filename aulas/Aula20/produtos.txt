@@ -1,0 +1,4 @@
+RECIBO DAS COMPRAS
+
+Produto: Taurina R$: 5.0
+Compra processada com sucesso! Valor cobrado: R$5.0
