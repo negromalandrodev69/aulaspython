@@ -1,0 +1,17 @@
+========== POSTO DE GASOLINA ==========
+Carro - ABC-1234
+Combustível: Etanol
+Valor: R$ 50.00
+
+Moto - DEF-5678
+Combustível: Gasolina
+Valor: R$ 25.00
+
+Van Escolar - GHI-9012
+Combustível: Diesel
+Valor: R$ 200.00
+========================================
+Etanol: R$ 50.00
+Gasolina: R$ 25.00
+Diesel: R$ 200.00
+TOTAL DO DIA: R$ 275.00
