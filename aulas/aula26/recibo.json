@@ -1,0 +1,20 @@
+{
+    "nomeT": "Techstore",
+    "produtos": [
+        {
+            "nome": "fone",
+            "preco": 200,
+            "estoque": 100
+        },
+        {
+            "nome": "mouse",
+            "preco": 45,
+            "estoque": 60
+        },
+        {
+            "nome": "cadeira ergonomica",
+            "preco": 3000.0,
+            "estoque": 6
+        }
+    ]
+}

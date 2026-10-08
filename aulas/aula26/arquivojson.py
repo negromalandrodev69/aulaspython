@@ -22,5 +22,20 @@ with open ("recibo.json", 'w', encoding="utf-8") as file:
 
 with open ("recibo.json", 'r', encoding="utf-8") as file:
     dados_lidos = json.load(file)
-    for produto in dados_lidos.values["produtos"]:
-        print(f"Produto: {produto['nome']} Preços: {produto['preco']}")
+    for produto in dados_lidos["produtos"]:
+        print(f"Produto: {produto['nome']} | Preços: {produto['preco']}")
+
+with open ("recibo.json", 'w', encoding="utf-8") as file:
+    dados_lidos["produtos"].append(
+        {
+            "nome": "cadeira ergonomica",
+            "preco": 3000.00,
+            "estoque": 6
+        }
+    )
+    json.dump(dados_lidos, file, ensure_ascii=False, indent=4)
+
+print("PREÇOS ATUALIZADOS")
+for produto in dados_lidos["produtos"]:
+    print(f"O {produto['nome']} agora custa R$ {produto['preco']:.2f}"
+          f"\n Quantidade estoque: {produto['estoque']}")
