@@ -22,7 +22,7 @@ with open("recibo.txt", 'w', encoding='utf-8') as arquivo:
         arquivo.write(f"{produto}\n")
 
 # LEITURA -> read -> 'r'
-# open -> ler todos os texto escritos dentro do recibo.txt
+# open -> ler todos os alunos.txt escritos dentro do recibo.txt
 with open("recibo.txt", 'r', encoding='utf-8') as arquivo:
     texto = arquivo.read()
 

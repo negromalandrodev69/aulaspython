@@ -1,5 +1,33 @@
-with open("texto", 'r') as file:
-    leitura = file.readline()
-    cl = []
-    for linha in leitura:
-        print(leitura.strip())
+def add_alunos():
+    aluno_n = str(input("Digite o nome do aluno: "))
+    turma = int(input("Digite a turma do aluno: "))
+    not1 = float(input("Digite a 1 nota do aluno: "))
+    not2 = float(input("Digite a 2 nota do aluno: "))
+    not3 = float(input("Digite a 3 nota do aluno: "))
+    not4 = float(input("Digite a 4 nota do aluno: "))
+    media = (not1 + not2 + not3 + not4) / 4
+    if media >= 7:
+        estadop = "Aprovado"
+    else :
+        estadop = "Reprovado"
+
+    with open('alunos.txt', 'a', encoding='utf-8') as file:
+        file.write(f"{aluno_n};{turma};{not1};{not2};{not3};{not4};"
+                      f"{estadop}\n")
+
+def padronizartxt ():
+    pesquisa = str(input("Digite o nome que quer saber a media: "))
+    with open('alunos.txt', 'r', encoding='utf-8') as file:
+        leitura = file.readlines()
+
+        for alunos in leitura:
+            alunos = alunos.strip()
+            alunos = alunos.split(';')
+            if pesquisa == alunos[0]:
+                media_g = (float(alunos[2]) + float(alunos[3]) + float(alunos[4]) + float(alunos[5])) / 4
+                print(f"A media da Aluno(a) {alunos[0]} é {media_g}")
+            else:
+                print("Esse aluno não existe, tente novamente.")
+                break
+
+padronizartxt()
