@@ -28,6 +28,21 @@ def padronizartxt ():
                 print(f"A media da Aluno(a) {alunos[0]} é {media_g}")
             else:
                 print("Esse aluno não existe, tente novamente.")
-                break
+                return
 
-padronizartxt()
+def cacau():
+    verificar = str(input("Digite o nome do aluno que quer ver se passou: "))
+    with open('alunos.txt', 'r', encoding='utf-8') as file:
+        leitura = file.readlines()
+        for alunos in leitura:
+            alunos = alunos.strip()
+            alunos = alunos.split(';')
+            if verificar == alunos[0]:
+                v = str(alunos[6])
+                if v == "Aprovado":
+                    print(f"O aluno está {alunos[6]}, ele passou")
+                else:
+                    print(f"O aluno está {alunos[6]},ele não passou")
+
+def turmas:
+    vturma = str(input("Digite o a turma do aluno: "))
