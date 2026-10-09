@@ -44,5 +44,11 @@ def cacau():
                 else:
                     print(f"O aluno está {alunos[6]},ele não passou")
 
-def turmas:
+def turmas():
     vturma = str(input("Digite o a turma do aluno: "))
+    with open('alunos.txt', 'r', encoding='utf-8') as file:
+        leitura = file.readlines()
+        for alunos in leitura:
+            alunos = alunos.strip()
+            alunos = alunos.split(';')
+            
