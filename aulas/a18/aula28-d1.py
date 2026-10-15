@@ -48,7 +48,44 @@ def turmas():
     vturma = str(input("Digite o a turma do aluno: "))
     with open('alunos.txt', 'r', encoding='utf-8') as file:
         leitura = file.readlines()
+        media_alunos = []
+        aluno_mm = []
+        media_maior = 0
         for alunos in leitura:
             alunos = alunos.strip()
             alunos = alunos.split(';')
-            
+            if vturma == alunos[1]:
+                media = (float(alunos[2]) + float(alunos[3]) + float(alunos[4]) + float(alunos[5])) / 4 # Refazer a media para o proprio metodo
+                nome = alunos[0]   # Orientar o nome dos alunos para lista
+                media_alunos.append([nome, media])
+
+                if media > maior_media:
+                    maior_media = media
+                    aluno_mm.append(alunos[0])
+                    aluno_mm.append(maior_media)
+
+        len_nome = (len(aluno_mm) - 2)
+        len_media = (len(aluno_mm) - 1)
+        print(f"A maior maior media foi o aluno {aluno_mm[len_nome]} com a média {aluno_mm[len_media]}")
+
+while True:  # loop infinito
+    opcao = int(input("Escolha uma opcao:\n"
+            "1) Adicionar aluno\n"
+            "2) Listar nomes\n"
+            "3) Buscar por nome\n"
+            "4) Maior media\n"
+            "5) Sair\n"
+            "\nDigite: "))
+
+    match opcao:
+            case 1:
+                add_alunos()
+            case 2:
+                padronizartxt()
+            case 3:
+                cacau()
+            case 4:
+                turmas()
+            case 5:
+                print("Finalizando sistema...")
+                break
