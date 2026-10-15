@@ -56,3 +56,5 @@ livron = [
         "quantidade" : 5,
     },
 ]
+
+catalogo.extend(livron)
