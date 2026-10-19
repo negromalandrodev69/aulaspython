@@ -58,3 +58,17 @@ livron = [
 ]
 
 catalogo.extend(livron)
+
+with open ("livraria.json", 'w', encoding="utf-8") as file:
+    json.dump(catalogo, file,indent=4 , ensure_ascii=False)
+
+with open("livraria.json", 'r', encoding="utf-8") as file:
+    leitura_l = json.load(file)
+    for leitura in leitura_l:
+        print(f"ID: {leitura['idd']}| Nome: {leitura['nome']}| Descrição: {leitura['descricao']}| Quantidade: {leitura['quantidade']}")
+
+    valor_total_loja = 0
+
+    for livro in leitura_l:
+        if livro["quantidade"] <= 15:
+            print(f'Esse livro: {livro["nome"]} tem menos de 15 no estoque.')
