@@ -8,7 +8,7 @@ import pandas as pd
 
 #1
 func = pd.read_csv('funcionarios.csv',
-                    sep = ";")
+                   sep = ";")
 
 filtrex = func[
     (func['salario'] < 3000) |
