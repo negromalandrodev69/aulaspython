@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\pandas\dever1\cargos_altos.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\pandas\dever1\funcionarios.csv">
           <value>
             <Attribute>
@@ -17,7 +10,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\pandas\dever2\cargos_altos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\pandas\dever2\funcionarios.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\pandas\dever3\dados_despadronizados.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\pandas\dever3\dados_padronizados.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />
