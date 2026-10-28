@@ -32,10 +32,6 @@ funcionarion0 = pd.DataFrame([
 dados = pd.read_csv("dados_despadronizados.csv",
                     dtype= {"cpf": str,"salario": str,"numero": str}, sep = ",")
 
-nomes = dados["nome"] #Problema em todas as variaveis de filtragem
-cpfs = dados["cpf"]
-salarios = dados["salario"]
-numers = dados["numero"]
 
 cpf_f = (dados["cpf"].str.replace(r"\D","",regex = True))
 # dados.insert(2, "cpf_formatado", dados["cpf"].str.replace(r"\D", "", regex=True))
