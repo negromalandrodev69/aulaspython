@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\pandas\dever3\dados_incompletos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\pandas\dever3\dados_padronizados.csv">
           <value>
             <Attribute>

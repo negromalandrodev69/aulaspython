@@ -8,26 +8,26 @@
 
 import pandas as pd
 
-# funcionarion0 = pd.DataFrame([
-#         {
-#         'nome': "Renatão",
-#         'cpf': "123.456.789-04",
-#         'numero': "00 00 00000-0000",
-#         'salario': "5.0000"
-#         },
-#         {
-#         'nome': "Carlinhos",
-#         'cpf': "66000353780",
-#         'numero': "3434343434444",
-#         'salario': "R$10,000"
-#         },
-#         {
-#         'nome': "Jones",
-#         'cpf': "0-0-0-07769600",
-#         'numero': "+55 (21) 99876-5432",
-#         'salario': "14.00,050"
-#         }
-#     ])
+funcionarion0 = pd.DataFrame([
+        {
+        'nome': "Renatão",
+        'cpf': "123.456.789-04",
+        'numero': "00 00 00000-0000",
+        'salario': "5.0000"
+        },
+        {
+        'nome': "Carlinhos",
+        'cpf': "66000353780",
+        'numero': "3434343434444",
+        'salario': "R$10,000"
+        },
+        {
+        'nome': "Jones",
+        'cpf': "0-0-0-07769600",
+        'numero': "+55 (21) 99876-5432",
+        'salario': "14.00,050"
+        }
+    ])
 
 dados = pd.read_csv("dados_despadronizados.csv",
                     dtype= {"cpf": str,"salario": str,"numero": str}, sep = ",")
@@ -38,21 +38,23 @@ salarios = dados["salario"]
 numers = dados["numero"]
 
 cpf_f = (dados["cpf"].str.replace(r"\D","",regex = True))
-
+# dados.insert(2, "cpf_formatado", dados["cpf"].str.replace(r"\D", "", regex=True))
 salario_f = (dados["salario"]
                     .str.replace(r"[^\d,.\-]", "", regex=True)
                     .str.replace(r"\.(?=\d{3}(?:\.|,|$))", "", regex=True)
                     .str.replace(r",",".", regex=False))
+salario_f = pd.to_numeric(salario_f, errors="coerce")
 numero_f = (dados["numero"]
                     .str.replace(r"\D" , "", regex=True)
                     .str.replace(r",",".", regex=False))
 
-dados_F = [cpf_f, salario_f, numero_f]
-
 dados_puros = dados[["nome","cpf","numero","salario"]]
-print(dados_puros)
 
-dados.insert(2,"s",salario_f)
+dados.insert(2,"cpf_form",cpf_f)
+dados.insert(4,"numero_form",numero_f)
+dados.insert(6,"salario_form",salario_f)
 
-compilado = pd.concat([cpf_f,salario_f,numero_f], ignore_index=True)
-compilado.to_csv("dados_padronizados.csv", index=False, sep = ";")
+print(dados.columns.tolist())
+print(dados.to_string())
+
+dados.to_csv("dados_padronizados.csv", index=False, sep=";")
