@@ -5,7 +5,7 @@
 # Adicione um novo funcionário com o cargo de Estagiário, registrando seu tempo de empresa como int.
 # Confira se as alterações foram aplicadas corretamente e se os arquivos CSV estão salvos com os dados atualizados.
 
-import pandas as pd
+import atividades_pandas as pd
 
 sepa = pd.read_csv('../dever1/funcionarios.csv',
                    sep = ";")

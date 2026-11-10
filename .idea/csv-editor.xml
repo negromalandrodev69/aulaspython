@@ -3,42 +3,14 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\pandas\dever1\funcionarios.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\pandas\dever2\cargos_altos.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\pandas\dever2\funcionarios.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\pandas\dever3\dados_despadronizados.csv">
+        <entry key="\atividades_pandas\dever4\estoque_supermercado.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\pandas\dever3\dados_padronizados.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\pandas\dever4\estoque_supermercado.csv">
+        <entry key="\atividades_pandas\dever5\vendas_mercados.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

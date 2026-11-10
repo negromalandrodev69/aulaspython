@@ -1,4 +1,4 @@
-import pandas as pd
+import atividades_pandas as pd
 
 func = pd.read_cvd("funcionarios.csv",sep=";")
 f = func.rename(columns={

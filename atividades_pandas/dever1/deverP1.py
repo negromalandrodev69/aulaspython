@@ -4,7 +4,7 @@
 # listar todos os funcionarios com id par, para fazer = %2 = True
 import csv
 
-import pandas as pd
+import atividades_pandas as pd
 
 #1
 func = pd.read_csv('funcionarios.csv',

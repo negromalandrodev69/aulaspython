@@ -6,7 +6,7 @@
 #
 # Utilize os metotos feitos em sala de aula para formatar os dados usando o .str e .replace.
 
-import pandas as pd
+import atividades_pandas as pd
 
 funcionarion0 = pd.DataFrame([
         {

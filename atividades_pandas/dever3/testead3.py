@@ -1,4 +1,4 @@
-import pandas as pd
+import atividades_pandas as pd
 
 df_dados_incompletos = pd.DataFrame([
     {
