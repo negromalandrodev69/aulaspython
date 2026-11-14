@@ -8,3 +8,13 @@
 # Mais caro: Mercado Central,Mais mediano: Mercado da Praça, Mais barato: Atacadão Leste
 #5
 # ,a região com maior receita individual foi o Mercado Central
+
+5. Calcule o Faturamento Total (Preço Unitário multiplicado pela Quantidade). Qual foi o
+faturamento de toda a rede e qual mercado individualmente gerou a maior receita?
+Explicação e justificativa da resposta:
+
+6. Crie uma simulação de promoção utilizando np.where: Se a &#39;Quantidade&#39; comprada de um
+produto for maior ou igual a 10, o cliente recebe um desconto de 10% no &#39;Preço Unitário&#39;
+daquela compra. Após aplicar essa regra criando uma nova coluna, qual seria o novo
+Faturamento Total da rede?
+Explicação e justificativa da resposta:
