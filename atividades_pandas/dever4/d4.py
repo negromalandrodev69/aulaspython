@@ -7,8 +7,6 @@ preco_corrigido = (estoque_supermercado["preco"].str.replace(r"\D","",regex = Tr
 preco_corrigido = pd.to_numeric(preco_corrigido, errors="coerce")
 preco_corrigido = preco_corrigido.fillna(preco_corrigido.mean()).round(2)
 
-estoque_supermercado["valor_total_estoque"] = estoque_supermercado["quantidade"] * preco_corrigido["preco"]
-
 quantidade_corrigida = (
     estoque_supermercado["quantidade"]
     .str.replace(r"\D","",regex = True)
@@ -46,8 +44,8 @@ print("\n--- PRODUTOS SEM DATA DE VENCIMENTO ---")
 print(estoque_supermercado[estoque_supermercado["data_vencimento"].isna()])
 
 print("\n--- MAIOR VALOR PATRIMONIAL POR SETOR ---")
-por_setor = estoque_supermercado.groupby("Setor")["valor_total_estoque"].sum().sort_values(ascending=False)
-print(f"\nSetor com maior valor parado: {por_setor.idxmax()} (R$ {por_setor.max():.2f})")
+# por_setor = estoque_supermercado.groupby("Setor")["valor_total_estoque"].sum().sort_values(ascending=False)
+# print(f"\nSetor com maior valor parado: {por_setor.idxmax()} (R$ {por_setor.max():.2f})")
 #COMENTARIOS
 
 #Possivel solução
