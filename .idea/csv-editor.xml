@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="C:\Users\Noturno\Downloads\funcionarios_corrigidos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\atividades_pandas\dever4\estoque_supermercado.csv">
           <value>
             <Attribute>
@@ -17,7 +24,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\projetoRH\funcionarios (3).csv">
+        <entry key="\projetoBIT\funcionarios_corrigidos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\projetoRH\funcionarios_corrigidos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\projetoRH\funcionariosrh.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />
